@@ -5,6 +5,10 @@ pipeline {
         jdk 'jdk8'
     }
     stages {
+    	stage('Git Checkout'){
+    	    git 'https://github.com/nilalohita83/sample_maven_java'    	    
+    	}
+
         stage ('Initialize') {
             steps {
                 sh '''
