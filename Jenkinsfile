@@ -1,9 +1,7 @@
 node {
    
     
-    	stage('Git Checkout'){
-    	    git 'https://github.com/nilalohita83/sample_maven_java'    	    
-    	}
+    	
 
         stage ('Initialize') {
             steps {
