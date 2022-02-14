@@ -1,10 +1,6 @@
-pipeline {
-    agent any
-    tools {
-        maven 'Maven 3.3.9'
-        jdk 'jdk8'
-    }
-    stages {
+node {
+   
+    
     	stage('Git Checkout'){
     	    git 'https://github.com/nilalohita83/sample_maven_java'    	    
     	}
@@ -28,5 +24,5 @@ pipeline {
                 }
             }
         }
-    }
+    
 }
